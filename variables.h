@@ -6,6 +6,8 @@
 #include <vector>
 #include <map>
 
+#include "type.h"
+
 namespace ASMI
 {
 	struct Variable
@@ -13,6 +15,7 @@ namespace ASMI
 		std::string name;
 		int* val;
 		bool used;
+        Type type;
 	};
 
 

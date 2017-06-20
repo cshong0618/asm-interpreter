@@ -121,6 +121,9 @@
 		<Unit filename="/home/shaong/programming/asminter/tokenizer.h">
 			<Option target="asminter"/>
 		</Unit>
+		<Unit filename="/home/shaong/programming/asminter/type.h">
+			<Option target="asminter"/>
+		</Unit>
 		<Unit filename="/home/shaong/programming/asminter/variables.cpp">
 			<Option target="asminter"/>
 		</Unit>

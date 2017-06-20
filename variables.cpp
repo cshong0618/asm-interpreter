@@ -7,6 +7,7 @@ void ASMI::Variables::allocate(std::string name, int val)
 		(*variables)[name].name = name;
 		(*variables)[name].val = new int;
 		(*variables)[name].used = true;
+        (*variables)[name].type = deduce_type(val);
 	}
 
 	*variables->at(name).val = val;
@@ -20,6 +21,7 @@ void ASMI::Variables::memory_allocate(std::string name, int vals[])
 		(*variables)[name].name = name;
 		(*variables)[name].val = vals;
 		(*variables)[name].used = true;
+        (*variables)[name].type = deduce_type(vals);
 	}
 }
 

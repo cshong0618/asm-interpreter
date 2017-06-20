@@ -7,13 +7,15 @@
 #include <memory>
 #include <cstdint>
 
+#include "type.h"
+
 namespace ASMI
 {
 	struct Register
 	{
 		std::unique_ptr<int> _val;
 		bool used;
-
+        Type type;
 	};
 
 	class Registers
@@ -28,7 +30,7 @@ namespace ASMI
 		int increment_memory(int loc, int val);
 	private:
 		std::vector<Register>* registers;
-		const int reg_size = 8;
+		const unsigned int reg_size = 16;
 		void free_register(int loc);
 	};
 

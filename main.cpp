@@ -10,6 +10,7 @@
 #include "math_ops.h"
 #include "binary_ops.h"
 #include "tokenizer.h"
+#include "type.h"
 
 enum RUN_STATES
 {
@@ -25,7 +26,7 @@ void space(void);
 
 int main(int argc, char* argv[])
 {
-	ASMI::Variables* vars = new ASMI::Variables();
+    ASMI::Variables* vars = new ASMI::Variables();
 	ASMI::Registers* regs = new ASMI::Registers();
 	std::clock_t t1;
 	t1 = clock();
@@ -34,6 +35,12 @@ int main(int argc, char* argv[])
 
 	// int literal allocation into register
 	regs->allocate(1, vars->get_address("hello"));
+    std::cout << "hello: " << std::dec << regs->get_value(1) << "\n";
+
+    // double lieteral declaration into variables
+    vars->allocate("float_test", 2.45);
+    regs->allocate(10, vars->get_address("float_test"));
+    std::cout << "float_test in register: " << std::dec << regs->get_value(10) << "\n";
 
 	// math operations
 	regs->memory_allocate(0, ASMI::add(regs->get_value(1), regs->get_value(1)));

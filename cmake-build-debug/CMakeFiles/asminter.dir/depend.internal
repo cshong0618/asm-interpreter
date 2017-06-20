@@ -18,6 +18,7 @@ CMakeFiles/asminter.dir/main.cpp.o
  /home/shaong/programming/asminter/math_ops.h
  /home/shaong/programming/asminter/registers.h
  /home/shaong/programming/asminter/tokenizer.h
+ /home/shaong/programming/asminter/type.h
  /home/shaong/programming/asminter/variables.h
 CMakeFiles/asminter.dir/math_ops.cpp.o
  /home/shaong/programming/asminter/math_ops.cpp
@@ -25,9 +26,11 @@ CMakeFiles/asminter.dir/math_ops.cpp.o
 CMakeFiles/asminter.dir/registers.cpp.o
  /home/shaong/programming/asminter/registers.cpp
  /home/shaong/programming/asminter/registers.h
+ /home/shaong/programming/asminter/type.h
 CMakeFiles/asminter.dir/tokenizer.cpp.o
  /home/shaong/programming/asminter/tokenizer.cpp
  /home/shaong/programming/asminter/tokenizer.h
 CMakeFiles/asminter.dir/variables.cpp.o
+ /home/shaong/programming/asminter/type.h
  /home/shaong/programming/asminter/variables.cpp
  /home/shaong/programming/asminter/variables.h
